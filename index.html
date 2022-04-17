@@ -1,0 +1,7 @@
+<script>
+    const id = new URL(window.location.href).searchParams.get("id")?.toString() ?? "";
+
+    if (id) window.location.href = `https://pfpet.herokuapp.com/discord/users/${id}.gif`;
+
+    alert("bruh no id provided");
+</script>
